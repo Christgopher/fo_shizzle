@@ -3,12 +3,14 @@ class String
     newer_array = []
     new_array = self.split("")
     new_array.each() do |letter|
-    if letter.==("s")
-      newer_array.push("z")
-    else
-      newer_array.push(letter)
+      if letter.==(letter.upcase())
+        newer_array.push(letter)
+      elsif letter.==("s")
+        newer_array.push("z")
+      else
+        newer_array.push(letter)
+      end
     end
+    newer_array.join()
   end
-  newer_array.join()
-    end
 end
